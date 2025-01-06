@@ -1,0 +1,78 @@
+Code Explanation: MyNotepadClone
+The provided Java code is a simple text editor application, similar to Notepad, built using the Swing library. Below is a structured explanation of the code:
+
+1. Class Structure
+Class Name: MyNotepadClone
+This is the main class that implements the text editor.
+2. Instance Variables
+JTextArea textArea:
+A multi-line text area where the user can input and edit text.
+JFrame frame:
+The main window of the application.
+3. Constructor: MyNotepadClone()
+Purpose: Initializes the GUI components and sets up the application window.
+Key Actions:
+Creates a JFrame with the title "My Notepad Clone".
+Sets the size of the window to 600x400 pixels.
+Adds a JTextArea with word wrap and line wrap enabled.
+Adds a JScrollPane to the text area for scrolling functionality.
+Creates a menu bar with three menus: File, Edit, and Help.
+4. Menu Bar and Menu Items
+File Menu:
+New: Clears the text area.
+Open: Opens a file and loads its content into the text area.
+Save: Saves the current content of the text area to a file.
+Save As: Saves the content to a new file with a user-specified name.
+Exit: Exits the application after confirmation.
+Edit Menu:
+Cut: Cuts the selected text.
+Copy: Copies the selected text.
+Paste: Pastes the copied or cut text.
+Text Color: Allows the user to change the text color.
+Background Color: Allows the user to change the background color of the text area.
+Font Size: Allows the user to change the font size.
+Font Style: Allows the user to change the font style (Plain, Bold, Italic, Bold Italic).
+Help Menu:
+Currently empty, but can be extended to include help-related options.
+5. File Operations
+newFile():
+Clears the text area by setting its text to an empty string.
+openFile():
+Opens a file dialog to select a file.
+Reads the file content and displays it in the text area.
+saveFile():
+Opens a file dialog to save the current content of the text area to a file.
+saveFileAs():
+Similar to saveFile(), but allows the user to specify a new file name.
+exitApp():
+Prompts the user for confirmation before exiting the application.
+6. Text Editing Operations
+cutText():
+Cuts the selected text from the text area.
+copyText():
+Copies the selected text from the text area.
+pasteText():
+Pastes the copied or cut text into the text area.
+7. Text and Background Color Customization
+changeTextColor():
+Opens a color chooser dialog to select a new text color.
+Applies the selected color to the text in the text area.
+changeBackgroundColor():
+Opens a color chooser dialog to select a new background color.
+Applies the selected color to the background of the text area.
+8. Font Customization
+changeFontSize():
+Opens a dialog with a spinner to select a new font size.
+Applies the selected font size to the text in the text area.
+changeFontStyle():
+Opens a dialog with options to select a font style (Plain, Bold, Italic, Bold Italic).
+Applies the selected font style to the text in the text area.
+9. Main Method
+public static void main(String[] args):
+Launches the application by creating an instance of MyNotepadClone using SwingUtilities.invokeLater().
+Ensures that the GUI is created on the Event Dispatch Thread (EDT).
+10. Key Features
+Text Editing: Supports basic text editing operations like cut, copy, and paste.
+File Handling: Allows users to create, open, save, and save files with custom names.
+Customization: Users can change text color, background color, font size, and font style.
+User -Friendly Interface: Uses Swing components
